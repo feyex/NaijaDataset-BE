@@ -30,7 +30,7 @@ app.use(cors());
 // api routes
 app.use('/tweet', tweetRoute);
 app.use('/api', yorubaRoute);
-app.use('/v1', userRoute);
+// app.use('/v1', userRoute);
 
 // start server
 const port = process.env.PORT;

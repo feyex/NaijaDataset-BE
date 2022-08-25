@@ -1,4 +1,5 @@
 const User = require('../models/users');
+const config = require('../config/config.json');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 
@@ -81,6 +82,7 @@ module.exports.deleteUser = (req, res) => {
 
 module.exports.login = (req, res) => {
 	const email = req.body.email;
+console.log('e,mm',email);
 	User.findOne({ 'email': email })
 		.then(async (user) => {
 			console.log(user,'user')

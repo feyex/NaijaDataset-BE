@@ -7,7 +7,9 @@ const tweetSchema = new Schema ({
     source: { type: String},
     area: { type: String},
     sentiment: {type: Number},
-    url: { type: String},  
+    url: { type: String},
+    userPolarity: { type: String},
+    language: {type: String}
 }, {
     timestamps: true
 });
